@@ -2,10 +2,10 @@ import streamlit as st
 import pandas as pd
 import pickle
 import requests
-movie_list1= pickle.load(open('lavaenv/movie_dict.pkl', 'rb'))
+movie_list1= pickle.load(open('movie_dict.pkl', 'rb'))
 movies=pd.DataFrame(movie_list1)
 
-similarity=pickle.load(open('lavaenv/similarity.pkl','rb'))
+similarity=pickle.load(open('similarity.pkl','rb'))
 
 st.title("Movie Recommendation System")
 
